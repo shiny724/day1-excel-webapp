@@ -1,0 +1,113 @@
+.wrap {
+  background: var(--color-surface-elevated);
+  border-radius: var(--rounded-lg);
+  border: 1px solid var(--color-hairline-dark);
+  overflow: hidden;
+}
+
+.tableWrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.th {
+  padding: 14px 16px;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.24px;
+  text-transform: uppercase;
+  color: var(--color-stone);
+  background: rgba(255,255,255,0.03);
+  border-bottom: 1px solid var(--color-hairline-dark);
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.15s;
+}
+.th:hover { color: var(--color-on-dark); }
+.thNum { text-align: right; }
+
+.thInner {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.sortIcon {
+  font-size: 10px;
+  opacity: 0.5;
+}
+
+.tr {
+  transition: background 0.1s;
+  border-bottom: 1px solid var(--color-hairline-dark);
+}
+.tr:last-child { border-bottom: none; }
+.tr:hover { background: rgba(255,255,255,0.03); }
+
+.td {
+  padding: 12px 16px;
+  color: var(--color-on-dark-mute);
+  font-size: 14px;
+  line-height: 1.43;
+  white-space: nowrap;
+}
+.tdNum {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  color: var(--color-on-dark);
+}
+
+.empty {
+  background: var(--color-surface-elevated);
+  border-radius: var(--rounded-lg);
+  border: 1px solid var(--color-hairline-dark);
+  padding: var(--spacing-xxxl);
+  text-align: center;
+  color: var(--color-stone);
+  font-size: 14px;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-lg);
+  padding: var(--spacing-lg) var(--spacing-xl);
+  border-top: 1px solid var(--color-hairline-dark);
+}
+
+.pageBtn {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-on-dark);
+  background: var(--color-surface-elevated);
+  border: 1px solid var(--color-hairline-dark);
+  border-radius: var(--rounded-md);
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.pageBtn:hover:not(:disabled) {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+.pageBtn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.pageInfo {
+  font-size: 14px;
+  color: var(--color-stone);
+  min-width: 60px;
+  text-align: center;
+}

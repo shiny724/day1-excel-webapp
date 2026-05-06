@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm create *)",
+      "Bash(npx create-vite@latest . --template react)",
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(curl -s http://localhost:5173)",
+      "mcp__Claude_in_Chrome__tabs_context_mcp",
+      "Bash(mkdir -p \"/c/Users/shiny0724/Desktop/Day 1/test2/.claude\")",
+      "mcp__Claude_Preview__preview_start",
+      "PowerShell($proc = Get-NetTCPConnection -LocalPort 5173 -ErrorAction SilentlyContinue | Select-Object -ExpandProperty OwningProcess -First 1; if \\($proc\\) { Stop-Process -Id $proc -Force; \"Killed PID $proc\" } else { \"No process on 5173\" })",
+      "Bash(node -e ' *)",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\shiny0724\\\\Desktop\\\\Day 1\\\\test2\\\\\" -Force | ForEach-Object { $_.Name })",
+      "PowerShell(cd \"C:\\\\Users\\\\shiny0724\\\\Desktop\\\\Day 1\"; $bytes = [System.IO.File]::ReadAllBytes\\(\"해외법인_분기실적_2026.xlsx\"\\); $b64 = [Convert]::ToBase64String\\($bytes\\); $b64.Length; $b64.Substring\\(0, 50\\))"
+    ]
+  }
+}
